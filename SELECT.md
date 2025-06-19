@@ -27,7 +27,7 @@ SELECT * FROM clientes;
 
 - Útil em testes ou quando você quer ver "tudo de uma vez".
 
-🎛️ Filtrando dados com `WHERE`
+## 🎛️ Filtrando dados com `WHERE`
 ```sql
 SELECT nome
 FROM clientes
@@ -37,7 +37,7 @@ WHERE idade >= 18;
 
 - O `WHERE` serve para filtrar os resultados com base em alguma condição.
 
-🧮 Funções agregadas
+## 🧮 Funções agregadas
 ```sql
 SELECT COUNT(*) FROM clientes;
 SELECT AVG(idade) FROM clientes;
@@ -49,7 +49,7 @@ SELECT MAX(idade) FROM clientes;
 
 `MAX, MIN, SUM`: maior, menor e soma.
 
-🧹 Ordenando com ORDER BY
+## 🧹 Ordenando com ORDER BY
 ```sql
 SELECT nome, idade
 FROM clientes
@@ -59,7 +59,7 @@ ORDER BY idade DESC;
 
 - `ASC` = crescente (padrão), `DESC` = decrescente.
 
-🔢 Limitando resultados
+## 🔢 Limitando resultados
 ```sql
 SELECT nome
 FROM clientes
