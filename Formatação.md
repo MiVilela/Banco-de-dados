@@ -78,3 +78,62 @@ SELECT FORMAT(GETDATE(), 'yyyy-MM') AS ano_mes;
 ```
 
 ---
+
+# 🔑 Chaves Primárias e Estrangeiras no SQL
+
+## 🆔 PRIMARY KEY (Chave Primária)
+
+A `PRIMARY KEY` é usada para **identificar unicamente** cada linha de uma tabela.  
+Pensa nela como o "CPF" de cada registro.
+
+---
+
+### ✅ Exemplo:
+
+```sql
+CREATE TABLE clientes (
+    cliente_id INT PRIMARY KEY,
+    nome VARCHAR(100)
+);
+```
+
+👉 A coluna `cliente_id` será única e **não pode ser nula** (`NOT NULL` implícito).
+
+---
+
+## 🔗 FOREIGN KEY (Chave Estrangeira)
+
+A `FOREIGN KEY` serve para **ligar duas tabelas**.  
+Ela cria uma **relação entre um campo de uma tabela e a `PRIMARY KEY` de outra**.
+
+---
+
+### ✅ Exemplo:
+
+```sql
+CREATE TABLE pedidos (
+    pedido_id INT PRIMARY KEY,
+    cliente_id INT,
+    FOREIGN KEY (cliente_id) REFERENCES clientes(cliente_id)
+);
+```
+
+👉 Aqui, `cliente_id` em `pedidos` aponta para `cliente_id` em `clientes`.
+
+---
+
+## 📌 Por que usar?
+
+- **Integridade referencial**: garante que o valor da chave estrangeira **exista na tabela pai**
+- Ajuda a manter os dados **organizados e coerentes**
+- Permite criar **relações entre tabelas**
+
+---
+
+🎓 *Resumo do resumo:*  
+- `PRIMARY KEY` → identifica unicamente um registro  
+- `FOREIGN KEY` → conecta tabelas e mantém integridade dos dados  
+- Juntas, formam a base dos **bancos de dados relacionais**
+
+---
+
