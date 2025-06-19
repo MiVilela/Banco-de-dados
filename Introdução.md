@@ -16,6 +16,3 @@ Um banco de dados é uma coleção organizada de informações que pode ser faci
 - **Organização:** Dados organizados e fáceis de acessar.
 - **Segurança:** Controle de acesso e proteção de dados.
 - **Consistência:** Garantia de integridade dos dados.
-
-## Conclusão
-Bancos de dados são fundamentais para armazen
