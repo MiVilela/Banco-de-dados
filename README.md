@@ -13,11 +13,6 @@ Aqui você vai encontrar resumos em **Markdown**, com explicações simples, dir
   - `SELECT`, `FROM`, `WHERE`
   - `INSERT`, `UPDATE`, `DELETE`
   - `ORDER BY`, `GROUP BY`, `HAVING`
-  - `JOINs` (INNER, LEFT, RIGHT, FULL)
-- Subqueries e funções agregadas
-- Normalização
-- Índices e chaves (primária, estrangeira)
-- Scripts e práticas
 
 ## 📁 Organização dos arquivos
 
